@@ -1,0 +1,130 @@
+/* Reset */
+body, h1, h2, h3, h4, h5, h6, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Typography */
+  body {
+    font-family: 'comic sans ms';
+    font-size: 16px;
+    line-height: 1.5;
+    color: #1e1e1e;
+  }
+  
+  h1, h2, h3 {
+    font-weight: bold;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-bottom: 24px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+  
+  h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  
+  p {
+    margin-bottom: 16px;
+  }
+  
+  a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  /* Header */
+  header {
+    background-color: #9e7498;
+    padding: 16px;
+  }
+  
+  header h1 {
+    text-align: center;
+  }
+  
+  header nav {
+    text-align: center;
+    font-weight: bold;
+  }
+  header nav a:hover{
+    color: rgb(198, 195, 195);
+  }
+  
+  header nav ul {
+    display: inline-block;
+  }
+  
+  header nav ul li {
+    display: inline-block;
+    margin-left: 16px;
+  }
+  
+
+  
+  /* Slider */
+  #slider {
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  #slider img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 1s ease-in-out;
+  }
+  
+  #slider img:nth-child(1) {
+    z-index: 1;
+  }
+  
+  #slider img:nth-child(2) {
+    z-index: 0;
+    opacity: 0;
+  }
+  
+  #slider img:nth-child(3) {
+    z-index: 0;
+    opacity: 0;
+  }
+  
+  
+  /* Produk Populer */
+  #produk-populer {
+    background-color: #fff;
+    padding: 16px;
+  }
+  
+  #produk-populer h2 {
+    margin-bottom: 16px;
+  }
+  
+  #produk-populer ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #produk-populer ul li {
+    width: calc(33.33% - 16px);
+  }
+
+
+
+  footer {
+    font-family: 'comic sans ms';
+    background-color: #3e1e3b;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+  }

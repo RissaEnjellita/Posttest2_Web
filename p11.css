@@ -1,0 +1,130 @@
+header {
+    font-family: 'comic sans ms';
+    background-color: #9e7498;
+    padding: 25px;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    color: #f15b2a;
+  }
+
+  footer {
+    background-color: #3e1e3b;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+  }
+
+
+.sales-boxes{
+  background: white;
+  padding: 3% 4% 4% 4%;
+  
+  border-radius: 12px;
+  box-shadow: 0 1px 13px rgb(0 0 0 / 20%);
+  margin-bottom: 7%;
+}
+h1 {
+  text-align: center;
+  padding-bottom: 27px;
+}
+
+div {
+  display: block;
+  margin: 10px;
+}
+
+.content form .user-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0px 0px 0px 0px;
+}
+
+form .input-box span .details{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+  
+}
+
+form .user-details input-box {
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+
+form .user-details input-box2 {
+  margin-bottom: 20px;
+  width: calc(100% / 2 - 20px);
+}
+
+* {
+  margin: 10px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.user-details .input-box input{
+  height: 45px;
+  width: 95%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.user-details .input-box2 textarea {
+  padding-top: 3%;
+  height: 88%;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.user-details .input-box .topp {
+  margin-top: 10px;
+}
+
+.user-details .input-box .checkbox {
+  margin-right: 10px;
+  margin-bottom: 22px;
+  height: 30px;
+  width: 30px;
+  border-radius: 3px;
+}
+
+.user-details .input-box .check {
+  position: absolute;
+  margin-top: 2px;
+}
+
+.user-details .input-box input:focus, .user-details .input-box input:valid, .user-details .input-box2 textarea:focus, .user-details .input-box select option:valid {
+  border-color: #9b59b6;
+}

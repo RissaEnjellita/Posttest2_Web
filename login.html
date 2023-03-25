@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login & Daftar Form</title>
+  <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="container" id="container">
+
+    <div class="form-container register-container">
+      <form name="regisform" action="/login.html">
+        <h1>Daftar Disini</h1>
+        <input type="text" placeholder="Nama" id="nama" required>
+        <input type="email" placeholder="Email" id="email" required>
+        <input type="password" placeholder="Password" id="password" required>
+        <button type="submit" id="btnRegis" >Daftar</button>
+        <span>Atau Gunakan Akun Kamu</span>
+        <div class="social-container">
+          <a href="#" class="social"><i class="lni lni-facebook-fill"></i></a>
+          <a href="#" class="social"><i class="lni lni-google"></i></a>
+          <a href="#" class="social"><i class="lni lni-linkedin-original"></i></a>
+        </div>
+      </form>
+    </div>
+
+    <div class="form-container login-container">
+      <form name="loginform" action="/home.html">
+        <h1>Login Disini</h1>
+        <input type="email" placeholder="Email" id="emaillog" required>
+        <input type="password" placeholder="Password" id="passwordlog" required>
+        <div class="content">
+          <input type="checkbox" onclick="myFunction()">Lihat Password
+			<script>
+			function myFunction() {
+			  var x = document.getElementById("passwordlog");
+			  if (x.type === "password") {
+			    x.type = "text";
+			  } else {
+			    x.type = "password";
+			  }
+			}
+			</script>
+          <div class="pass-link">
+            <a href="#">Lupa Password?</a>
+          </div>
+        </div>
+        <button type="submit" id="btnLogin">Login</button>
+        <span>Atau Gunakan Akun Kamu</span>
+        <div class="social-container">
+          <a href="#" class="social"><i class="lni lni-facebook-fill"></i></a>
+          <a href="#" class="social"><i class="lni lni-google"></i></a>
+          <a href="#" class="social"><i class="lni lni-linkedin-original"></i></a>
+        </div>
+      </form>
+    </div>
+
+    <div class="overlay-container">
+      <div class="overlay">
+        <div class="overlay-panel overlay-left">
+          <h1 class="title">Halo</h1>
+          <p>Jika Kamu Memiliki Akun, Silahkan Login Disini</p>
+          <button class="ghost" id="login">Login
+            <i class="lni lni-arrow-left login"></i>
+          </button>
+        </div>
+        <div class="overlay-panel overlay-right">
+          <h1 class="title">Halo</h1>
+          <p>Jika Kamu Belum Memiliki Akun, Daftar Sekarang</p>
+          <button class="ghost" id="register">Daftar
+            <i class="lni lni-arrow-right register"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="login.js"></script>
+  <!-- <script src="regis.js"></script> -->
+
+</body>
+</html>
